@@ -47,11 +47,14 @@ Issue the following command replacing `<Filename>` with the name of the file you
 admin@server:/Users/admin$ source <Filename>
 ```
 
-You need to make sure the GAM configuration directory actually exists. Test that like this:
+You need to make sure the GAM configuration directory actually exists. If it’s empty, you’ll just get total 0. That’s normal for a brand new folder. Test that like this:
 ```
 admin@server:/Users/admin$ ls -l $GAMCFGDIR
 ```
-
+You can confirm what $GAMCONFIGDIR is set to by running:
+```
+admin@server:/Users/admin$ echo $GAMCONFIGDIR
+```
 ### Set a working directory
 
 You should establish a GAM working directory; you will store your GAM related
@@ -80,6 +83,11 @@ to one of these files based on your shell:
 ~/.bashrc
 ~/.zshrc
 ~/.profile
+```
+
+To find out what shell you are running, you can run:
+```
+echo $0
 ```
 
 Issue the following command replacing `<Filename>` with the name of the file you edited:
