@@ -1,3 +1,13 @@
+7.19.00
+
+Eliminated `drive_v3_beta` and `meet_v2_beta` from `gam.cfg` as the API betas are no longer used.
+
+Updated `Meet API` scopes so that GAM can read metadata about additional Meet spaces.
+```
+[*] 34)  Meet API - Display Meets regardless of creator
+[*] 35)  Meet API - Manage/Display Meets created by this GAM
+```
+
 7.18.07
 
 Updated `gam <UserTypeEntity> print drivelastmodification` to put `addcsvdata` columns
