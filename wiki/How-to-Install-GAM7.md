@@ -47,7 +47,7 @@ Issue the following command replacing `<Filename>` with the name of the file you
 admin@server:/Users/admin$ source <Filename>
 ```
 
-You need to make sure the GAM configuration directory actually exists. If it’s empty, you’ll just get total 0. That’s normal for a brand new folder. Test that like this:
+You need to make sure the GAM configuration directory actually exists. If it’s empty, you’ll just get total 0. That’s normal for a brand new folder. -l (lowercase L) is verbose, good for checking details like file size or permissions. -1 (number 1) is minimal, useful if you just want a clean list of filenames. The $GAMCFGDIR is case sensitive. Test that like this:
 ```
 admin@server:/Users/admin$ ls -l $GAMCFGDIR
 ```
